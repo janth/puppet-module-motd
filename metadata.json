@@ -1,13 +1,19 @@
 {
-  "name": "ericsson-motd",
-  "version": "2.0.0",
-  "author": "ericsson",
+  "name": "janth-motd",
+  "version": "2.0.1",
+  "author": "ericsson, janth",
   "summary": "Manage MOTD",
   "license": "Apache-2.0",
-  "source": "git://github.com/Ericsson/puppet-module-motd.git",
-  "project_page": "http://github.com/Ericsson/puppet-module-motd",
-  "issues_url": "https://github.com/Ericsson/puppet-module-motd/issues",
+  "source": "git://github.com/janth/puppet-module-motd.git",
+  "project_page": "http://github.com/janth/puppet-module-motd",
+  "issues_url": "https://github.com/janth/puppet-module-motd/issues",
   "description": "Manage /etc/motd, /etc/issue, and /etc/issue.net files",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.13.1 < 6.0.0"
+    }
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Debian",
@@ -87,7 +93,8 @@
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
-  "dependencies": [
-    {"name":"puppetlabs/stdlib","version_requirement":">= 4.13.1 < 6.0.0"}
-  ]
+  "description": "Manage /etc/motd, /etc/issue, and /etc/issue.net files",
+  "pdk-version": "1.14.0",
+  "template-url": "pdk-default#1.14.0",
+  "template-ref": "1.14.0-0-g1bf3a4e"
 }
